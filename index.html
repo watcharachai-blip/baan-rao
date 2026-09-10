@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0F172A">
+    <title>TACTICAL TASKFORCE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="badge">CMD</span>
+                <h1>TASKFORCE</h1>
+            </div>
+            <div class="stats" id="stats">0 / 0 TASK COMPLETE</div>
+        </header>
+
+        <!-- Input Form -->
+        <form id="task-form" class="task-form">
+            <div class="input-group">
+                <input type="text" id="task-title" placeholder="ระบุภารกิจที่ต้องดำเนินการ..." required autocomplete="off">
+            </div>
+            <div class="input-row">
+                <input type="date" id="task-date">
+                <button type="submit" class="btn-submit">บันทึกภารกิจ</button>
+            </div>
+        </form>
+
+        <!-- Task List Controls -->
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="pending">PENDING (ค้างส่ง)</button>
+            <button class="filter-btn" data-filter="completed">COMPLETED (สำเร็จ)</button>
+            <button class="filter-btn" data-filter="all">ALL (ทั้งหมด)</button>
+        </div>
+
+        <!-- Task List Area -->
+        <main class="task-list" id="task-list"></main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

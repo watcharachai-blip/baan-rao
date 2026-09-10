@@ -1,0 +1,16 @@
+{
+  "name": "TACTICAL TASKFORCE",
+  "short_name": "TASKFORCE",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0B0F17",
+  "theme_color": "#0F172A",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/906/906334.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
